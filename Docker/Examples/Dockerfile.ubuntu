@@ -1,0 +1,8 @@
+FROM ubuntu:latest
+
+# Um comando Fixo
+ENTRYPOINT [ "echo", "hello" ]
+
+# Comando Variavel que pode entrar como parametro do Entry Point
+# No caso o "Hello" é um valor padrão caso não passe nenhum parametro no entry point.
+CMD [ "Hello"]
